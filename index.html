@@ -1,23 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
-    <script>
-        function openDeepLink(url) {
-            window.location.href = url;
-
-            // If the link is blocked, show a fallback message
-            setTimeout(() => {
-                alert('If the payment app did not open, please try manually.');
-            }, 1500);
-        }
-    </script>
 </head>
 <body>
-    <a href="intent://pay?pa=suman7605@sbi&pn=Suman&cu=INR#Intent;scheme=upi;package=com.phonepe.app;end;">
-    Pay with PhonePe
-</a>
+    <p>Click below to pay:</p>
+    <a href="phonepe://upi/pay?pa=suman7605@sbi&pn=Suman&cu=INR">Pay with PhonePe</a>
+    <br>
+    <a href="tez://upi/pay?pa=suman7605@sbi&pn=Suman&cu=INR">Pay with Google Pay</a>
+    <br>
+    <a href="paytmmp://pay?pa=suman7605@sbi&pn=Suman&cu=INR">Pay with Paytm</a>
 </body>
 </html>
+
