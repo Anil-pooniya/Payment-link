@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Link</title>
+    <script>
+        function openUPI() {
+            window.location.href = "upi://pay?pa=suman7605@sbi&pn=Suman&cu=INR&am=100";
+        }
+    </script>
 </head>
 <body>
     <h2>Pay to Suman</h2>
-    <p>Click the link below to make a payment:</p>
+    <p>Click the button below to pay:</p>
     
-    <!-- UPI Payment Link -->
-    <a href="upi://pay?pa=suman7605@sbi&pn=Suman&cu=INR&am=100" style="
-        display: inline-block;
+    <!-- Payment Button -->
+    <button onclick="openUPI()" style="
         padding: 10px 20px;
         background-color: #4CAF50;
         color: white;
-        text-decoration: none;
+        border: none;
         font-size: 16px;
         border-radius: 5px;
+        cursor: pointer;
         transition: background-color 0.3s ease;
-    " target="_blank">
-        💰 Click here to pay Suman ₹100
-    </a>
-    
-    <p>Make sure you have PhonePe, Google Pay, or any UPI app installed!</p>
+    ">
+        💰 Pay ₹100 with UPI
+    </button>
 </body>
 </html>
+
