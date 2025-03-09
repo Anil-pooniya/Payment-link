@@ -2,31 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Link</title>
-    <script>
-        function openUPI() {
-            window.location.href = "upi://pay?pa=suman7605@sbi&pn=Suman&cu=INR&am=100";
-        }
-    </script>
+    <meta http-equiv="refresh" content="0;url=upi://pay?pa=suman7605@sbi&pn=Suman&cu=INR&am=100">
+    <title>Redirecting to Payment</title>
 </head>
 <body>
-    <h2>Pay to Suman</h2>
-    <p>Click the button below to pay:</p>
-    
-    <!-- Payment Button -->
-    <button onclick="openUPI()" style="
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    ">
-        💰 Pay ₹100 with UPI
-    </button>
+    <h2>Redirecting to Payment...</h2>
+    <p>If it doesn't open, <a href="upi://pay?pa=suman7605@sbi&pn=Suman&cu=INR&am=100">click here</a>.</p>
 </body>
 </html>
-
